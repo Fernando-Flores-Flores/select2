@@ -1,0 +1,13 @@
+<h1>Multi-Select Dropdown using Angular 11/10</h1>
+
+<!-- Using Items Input -->
+<ng-select
+  [items]="cars"
+  bindLabel="name"
+  placeholder="Select Category"
+  appendTo="body"
+  [multiple]="true"
+  (change)="seleccionados()"
+  [(ngModel)]="selected"
+>
+</ng-select>
